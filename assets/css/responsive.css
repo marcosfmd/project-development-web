@@ -1,0 +1,106 @@
+@media screen and (max-width: 1000px) {
+  main .container-main div{
+    margin: auto;
+  }
+  
+  main .container-main img{
+    display: none;
+  }
+
+  h2 {
+    margin-left: 50px;
+  }
+
+  div h3 {
+    margin-left: 50px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  form input {
+    margin: 12px;
+  }
+}
+
+@media screen and (min-width: 631px) {
+  .container-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding-inline: 20px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  header nav ul{
+    display: none;
+  }
+
+  main .container-menu img {
+    display: none;
+  }
+
+  .container-menu {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #checkbox-menu {
+    position: absolute;
+    opacity: 0;
+  }
+
+  label {
+    height: 22px;
+    width: 30px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+
+  label span {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 30px;
+    transition: 025 ease-in-out;
+    position: absolute;
+  }
+
+  label span:nth-child(1) {
+    top: 0;
+  }
+
+  label span:nth-child(2) {
+    top: 8px;
+  }
+  label span:nth-child(3) {
+    top: 16px;
+  }
+
+  #checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+
+  #checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+}
