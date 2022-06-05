@@ -176,7 +176,7 @@ main .container figure img  {
 
 /* Contato */
 #contact {
-  height: 90%;
+  height: 85vh;
   max-width: 980px;
   margin: 90px auto;
 }
@@ -289,7 +289,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
+  margin: 8rem;
 }
 
 footer p {
