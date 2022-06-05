@@ -103,4 +103,19 @@
     transform: rotate(45deg);
     top: 8px;
   }
+
+  .arrow {
+    top: 88%;
+  }
+
+  footer {
+    height: 160px;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
 }

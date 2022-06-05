@@ -141,6 +141,7 @@ main .container figure img  {
   display: flex;
   flex-direction: column;
   box-shadow: 5px 5px 15px -4px #000;
+  border-radius: 8px;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
@@ -154,6 +155,8 @@ main .container figure img  {
   padding-top: 56.25%;
   overflow: hidden;
   position: relative;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .image img {
@@ -161,7 +164,6 @@ main .container figure img  {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 10px;
 }
 
 .content {
@@ -172,15 +174,109 @@ main .container figure img  {
   margin-block-end: 0;
 }
 
-
-.desafio {
-  height: 400px;
+/* Contato */
+#contact {
+  height: 90%;
   max-width: 980px;
+  margin: 90px auto;
+}
+
+.contact-wrapper {
+  width: 60%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000;
-  margin: 100px auto;
+  background-color: #eee;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  margin: auto;
+  padding: 1rem 3rem 3rem 3rem;
+}
+
+.contact-wrapper h1 {
+  width: 80%;
+  color: rgb(131, 131, 131);
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+.input-group {
+  position: relative;
+}
+
+.input-group:hover {
+  opacity: .5;
+}
+
+.field {
+  width: 20rem;
+  height: 3rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px dashed #0080ed;
+  border-radius: 0;
+  outline: none;
+  margin: 2.4rem 0;
+}
+
+.input-group textarea {
+  padding-top: 3rem;
+  width: 20rem;
+  height: 3rem;
+  resize: none;
+  overflow-y: hidden;
+}
+
+.input-group textarea:focus {
+  height: 150px;
+  padding-top: 1rem;
+  border-top: none;
+  overflow: visible;
+}
+
+.field-label {
+  position: absolute;
+  left: 0;
+  top: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: all 0.3s;
+}
+
+.field:focus ~ label {
+  top: 0;
+  font-size: 1.4rem;
+}
+
+.field:focus {
+  border-bottom: 1px solid #0080ed;
+}
+
+.btn-submit {
+  width: 100%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.arrow {
+  position: fixed; 
+  left: 94%;
+  top: 80%;
+  border: none;
+  background-color: transparent;
+}
+
+.arrow i {
+  color: #000;
+  font-size: 4rem;
 }
 
 footer {

@@ -27,16 +27,16 @@
             </div>
 
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Artigos</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#article">Artigos</a></li>
+              <li><a href="#contact">Contato</a></li>
             </ul>
           </nav>
       </div>
     </header>
 
     <main>
-      <section class="container-main">
+      <section id="home" class="container-main">
         <div>
           <h2><span>Inscreva-se agora</span></h2>
           <h2>na Newsletter</h2>
@@ -52,7 +52,8 @@
       </section>
       
     </main>
-    <section class="cards">
+
+    <section id="article" class="cards">
       <div class="card">
         <figure class="image">
           <img src="./assets/images/unicornio.webp" alt="imagem do unicorne">
@@ -104,44 +105,57 @@
           </div>
         </div>
       </div>
-      <!--
+
       <div class="card">
         <figure class="image">
           <img src="./assets/images/unicornio.webp" alt="imagem do unicorne">
-          <p class="titile text-medium">Com startups mais 'baratas', grandes empresas buscam aquisições</p>
+        </figure>
+        <div class="content">
+          <p class="title text-medium">Com startups mais 'baratas', grandes empresas buscam aquisições</p>
   
           <div class="info">
             <p class="text-medium">57 min</p>
           </div>
-        </figure>
+        </div>
       </div>
 
       <div class="card">
         <figure class="image">
           <img src="./assets/images/unicornio.webp" alt="imagem do unicorne">
-          <p class="titile text-medium">Com startups mais 'baratas', grandes empresas buscam aquisições</p>
+        </figure>
+        <div class="content">
+          <p class="title text-medium">Com startups mais 'baratas', grandes empresas buscam aquisições</p>
   
           <div class="info">
             <p class="text-medium">57 min</p>
           </div>
-        </figure>
+        </div>
       </div>
 
-      <div class="card">
-        <figure class="image">
-          <img src="./assets/images/unicornio.webp" alt="imagem do unicorne">
-          <p class="titile text-medium">Com startups mais 'baratas', grandes empresas buscam aquisições</p>
-  
-          <div class="info">
-            <p class="text-medium">57 min</p>
-          </div>
-        </figure>
-      </div> -->
     </section>
 
-    <section id="form">
-      <div class="desafio">Desafio</div>
+    <section id="contact">
+      <div class="contact-wrapper">
+        <h1>Contato</h1>
+        <form action="#" method="post">
+            <div class="input-group">
+              <input type="text" class="field" id="name">
+              <label for="name" class="field-label">Nome</label>
+            </div>
+            <div class="input-group">
+              <input type="email" class="field" id="email">
+              <label for="email" class="field-label">E-mail</label>
+            </div>
+            <div class="input-group">
+              <textarea class="field" id="message"></textarea>
+              <label for="messege" class="field-label active">Mensagem</label>
+            </div>
+            <button type="submit" class="btn-submit">Enviar</button>
+        </div>
+      </form>
     </section>
+
+    <button class="arrow"><a href="#home"><i class="bi bi-arrow-up-circle"></i></a></button> 
 
     <footer>
       <div class="container-footer">
