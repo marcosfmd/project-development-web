@@ -176,7 +176,6 @@ main .container figure img  {
 
 /* Contato */
 #contact {
-  height: 85vh;
   max-width: 980px;
   margin: 90px auto;
 }
