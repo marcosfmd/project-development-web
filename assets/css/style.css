@@ -296,7 +296,6 @@ footer {
 }
 
 .container-footer {
-  height: 80px;
   max-width: 980px;
   display: flex;
   justify-content: space-between;
